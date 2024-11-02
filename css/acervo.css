@@ -1,0 +1,126 @@
+/* Cores principais */
+:root {
+    --primary-bg: #292626;
+    --accent-color: #C3781B;
+    --hover-accent: #a86a13;
+    --light-bg: #f8f8f8;
+    --button-hover: #5A5A5A;
+}
+
+/* Reset básico */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Seções principais */
+.section-title {
+    color: var(--accent-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#principal {
+    padding: 2rem;
+    background-color: var(--light-bg);
+}
+
+.galeria_de_fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.galeria_de_fotos img {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria_de_fotos img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Botões */
+.button-primary {
+    background-color: var(--primary-bg);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: var(--hover-accent);
+    transform: translateY(-3px);
+}
+
+/* Formulário de visita */
+.visita-form {
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.visita-form input,
+.visita-form button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.visita-form input[type="date"],
+.visita-form input[type="number"] {
+    padding: 0.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-bg);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+
+.footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer a:hover {
+    color: var(--hover-accent);
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .header {
+        padding: 4rem 0;
+    }
+
+    .visita-form {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .visita-form div {
+        flex: 1;
+    }
+}

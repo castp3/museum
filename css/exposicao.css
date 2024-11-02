@@ -1,0 +1,109 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar-color {
+  background-color: #3f3d56;
+}
+
+.nav-text-color {
+  color: #d4d4d4;
+  transition: color 0.3s;
+}
+
+.nav-text-color:hover {
+  color: #fff;
+}
+
+.nav-button-color {
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+}
+
+.nav-button-color:hover {
+  background-color: #5b55d4;
+}
+
+/* Seção de Exposições */
+.exposicoes-section h2 {
+  font-size: 2em;
+  color: #3f3d56;
+}
+
+.exposicoes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.expo-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s;
+}
+
+.expo-card:hover {
+  transform: translateY(-5px);
+}
+
+.expo-card img {
+  width: 100%;
+  height: auto;
+}
+
+.expo-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.expo-content h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #3f3d56;
+}
+
+.expo-content p {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.expo-content .btn {
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  transition: background 0.3s;
+}
+
+.expo-content .btn:hover {
+  background-color: #5b55d4;
+}
+
+/* Footer */
+.footer {
+  background-color: #3f3d56;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .exposicoes-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
