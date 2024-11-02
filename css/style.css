@@ -235,3 +235,16 @@ input[type="date"]::-webkit-inner-spin-button,
     margin-top: 50px;
     background-color: #292626;
 }
+
+.galeria_de_fotos .card-img-top {
+    width: 100%;
+    height: 200px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Mantém a proporção sem distorcer */
+}
+.exposicoes .card-img-top {
+    width: 100%;
+    height: 200px; /* Define uma altura fixa para uniformizar */
+    object-fit: cover; /* Mantém a proporção sem distorcer */
+    border-radius: 8px; /* Opcional: adiciona bordas arredondadas */
+}
+
